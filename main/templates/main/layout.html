@@ -9,9 +9,18 @@
     <title>{% block title %} {% endblock %}</title>
   </head>
   <body>
-    <div class="logo">
-      <span>Hot News</span>
-    </div>
+    <header>
+      <div class="logo">
+        <span>Hot News</span>
+      </div>
+
+      <div class="links">
+        <a href="#"><span>Home</span></a>
+        <a href="#"><span>About Us</span></a>
+        <a href="#"><span>Contact</span></a>
+      </div>
+    </header>
+
     {% block content %} {% endblock %}
   </body>
 </html>
