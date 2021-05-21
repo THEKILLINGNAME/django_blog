@@ -62,7 +62,7 @@ header .links a:last-child {
   width: 100%;
   background-color: #A1ACB3;
   left: -40px;
-  transition: left .4s ease, opacity .4s ease;
+  transition: left .3s ease, opacity .3s ease;
 }
 
 .links a:before {
@@ -76,7 +76,7 @@ header .links a:last-child {
   background-color: #A1ACB3;
   top: 30px;
   left: -50px;
-  transition: left .4s .15s ease, opacity .4s .15s ease;
+  transition: left .3s .15s ease, opacity .3s .15s ease;
 }
 
 .links a:hover:after,
