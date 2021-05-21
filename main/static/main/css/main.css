@@ -86,10 +86,10 @@ header .links a:last-child {
 }
 
 .links a:active {
-  color: #000000;
+  color: #a5a5a5;
 }
 
 .links a:active:after,
 .links a:active:before {
-  background-color: #000000;
+  background-color: #838383;
 }
