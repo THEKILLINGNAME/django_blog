@@ -93,3 +93,40 @@ header .links a:last-child {
 .links a:active:before {
   background-color: #838383;
 }
+
+
+/* INDEX.HTML */
+
+
+.features {
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  background-color: #c4d0daab;
+  padding: .8rem;
+  border-radius: .4rem;
+}
+
+.features p {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.features .btn {
+  background-color: #CCCCCC;
+  color: #474747;
+  padding: 1rem;
+  border-radius: .2rem;
+  outline: none;
+  border: 2px solid #442e20;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  transition: background .3s ease, border .3s ease, top .2s ease;
+}
+
+.features .btn:hover {
+  background-color: #ccd2da;
+  border: 2px solid #757575;
+  top: -2.5px;
+}
