@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Добавление новости{% endblock %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    <div class="features">
+      <h1>Напишите новость!</h1>
+      <form method="post">
+        <input type="text" placeholder="Название"><br>
+        <input type="text" placeholder="Заголовок"><br>
+        <textarea placeholder="Текст"></textarea><br>
+        <input type="date"><br>
+        <input type="time"><br>
+        <button type="submit" class="btn">Добавить запись</button>
+      </form>
+    </div>
+{% endblock %}

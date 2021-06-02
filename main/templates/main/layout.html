@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+       <link rel="stylesheet" href="{% static 'main/css/main.css' %}" />
     <title>{% block title %} {% endblock %}</title>
   </head>
   <body>
@@ -17,6 +17,7 @@
       <div class="links">
         <a href="{% url 'home' %}"><span>Home</span></a>
         <a href="{% url 'news_home' %}"><span>News</span></a>
+        <a href="{% url 'create' %}"><span>Add News</span></a>
         <a href="{% url 'about' %}"><span>About Us</span></a>
         <a href="{% url 'contact' %}"><span>Contact</span></a>
       </div>
