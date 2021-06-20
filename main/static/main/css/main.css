@@ -8,6 +8,11 @@
 
 body {
   background-color: #e6f5ff;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
 }
 
 /* HEADER */
@@ -42,7 +47,7 @@ header .links a {
   text-decoration: none;
   margin-right: 1rem;
   white-space: nowrap;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #CCCCCC;

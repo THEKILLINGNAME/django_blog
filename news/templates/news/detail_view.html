@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ article.title }}{% endblock %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+
+  <div class="features">
+    <div class="details">
+      <h1>{{ article.title }}</h1>
+      <h3>{{ article.subtitle }}</h3>
+      <p>{{ article.text }}</p>
+      <p>{{ article.date }}</p>
+      <a href="{% url 'news_update' article.id %}"><button class="btn">Редактировать</button></a>
+      <a href="{% url 'news_delete' article.id %}"><button class="btn">Удалить</button></a>
+      <a href="{% url 'news_home' %}"><button class="btn">Назад</button></a>
+    </div>
+  </div>
+
+
+{% endblock %}

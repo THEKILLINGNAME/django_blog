@@ -1,14 +1,15 @@
 {% extends 'main/layout.html' %}
 {% load static %}
+
 {% block title %}Новости{% endblock %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'main/css/index.css' %}">
-<h1>Новости!</h1>
-{% for el in news %}
-  <div class="features">
-    <h2>{{ el.title }}</h2>
-     <p>{{ el.subtitle }}</p>
-     <button class="btn">About Us</button>
-   </div>
-{% endfor %}
+  <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+  <h1>Новости!</h1>
+  {% for el in news %}
+    <div class="features">
+      <h2>{{ el.title }}</h2>
+      <p>{{ el.subtitle }}</p>
+      <a href="{% url 'news_details' el.id %}"><button class="btn">Подробнее</button></a>
+    </div>
+  {% endfor %}
 {% endblock %}
